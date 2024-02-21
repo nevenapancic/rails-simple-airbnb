@@ -1,0 +1,32 @@
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+  Amsterdam flats
+</div>
+<div class="container">
+<%= link_to "Add", new_flat_path, class: "btn btn-flat" %>
+  <div class="cards">
+   <% @flats.each do |flat| %>
+   <%=link_to flat_path(flat.id) do  %>
+<div class="card-trip">
+  <img src="" />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= flat.name %></h2>
+      <p>For <%= flat.number_of_guests%> guests</p>
+    </div>
+    <h2 class="card-trip-pricing"><%= flat.price_per_night%>$</h2>
+  </div>
+</div>
+<% end %>
+<% end %>
+</div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+        This page is made by Neve with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+</a>
+<%# <%=link_to flats_path do %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<%# <% end %>
+  </div>
+</div>
+<div class="container">
+  <h1>New Flat</h1>
+
+  <%= render 'form' %>
+
+  <%= link_to 'Back', flats_path, class: "btn btn-flat" %>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+        This page is made by Neve with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
